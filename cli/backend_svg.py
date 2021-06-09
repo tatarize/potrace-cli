@@ -21,9 +21,10 @@ def register(backends: dict, **kwargs):
 def backend_svg(args, image, path: Path):
     with open(args.output, "w") as fp:
         fp.write(
-            '<svg version="1.1"'
-            ' xmlns="http://www.w3.org/2000/svg"'
-            ' xmlns:xlink="http://www.w3.org/1999/xlink"'
+            '<svg version="1.1"' +
+            ' xmlns="http://www.w3.org/2000/svg"' +
+            ' xmlns:xlink="http://www.w3.org/1999/xlink"' +
+            ' width="%d" height="%d"' % (image.width, image.height) +
             ' viewBox="0 0 %d %d">' % (image.width, image.height)
         )
         parts = []
@@ -52,9 +53,10 @@ def backend_svg(args, image, path: Path):
 def backend_jagged_svg(args, image, path):
     with open(args.output, "w") as fp:
         fp.write(
-            '<svg version="1.1"'
-            ' xmlns="http://www.w3.org/2000/svg"'
-            ' xmlns:xlink="http://www.w3.org/1999/xlink"'
+            '<svg version="1.1"' +
+            ' xmlns="http://www.w3.org/2000/svg"' +
+            ' xmlns:xlink="http://www.w3.org/1999/xlink"' +
+            ' width="%d" height="%d"' % (image.width, image.height) +
             ' viewBox="0 0 %d %d">' % (image.width, image.height)
         )
         parts = []
