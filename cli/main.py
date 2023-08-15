@@ -101,7 +101,7 @@ parser.add_argument(
     "--blacklevel",
     type=float,
     default=0.5,
-    help="set black level treshold",
+    help="set black level threshold",
 )
 
 
