@@ -38,7 +38,7 @@ optional arguments:
                         set foreground color (default Black)
   -i, --invert          invert bitmap
   -k BLACKLEVEL, --blacklevel BLACKLEVEL
-                        set black level treshold
+                        set black level threshold
 ```
 
 # Requirements
